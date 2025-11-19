@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root{
+            --color: rgb(147, 231, 164); /* this is kind of global variables we can call this anywhere */
+            --seccol: rgb(205, 166, 100); /* we can create any kind of variables that can hold strings, text, etc..not just colors */
+            --defpad: 33px;
+            --defop: 0.3;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav{
+            background-color: var(--color);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: var(--defpad);
+            border: 6px solid var(--seccol);
+            opacity: var(--defop);
+        }
+
+        ul li:first-child{
+            --color: rgb(198, 198, 173); /* local variable */
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--seccol);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati veritatis, accusamus perferendis enim ipsa minima non velit architecto ut neque qui nulla incidunt illo cum numquam quam tenetur dolor, omnis illum, in sequi quos? Cum necessitatibus quae obcaecati ex rem aspernatur error esse architecto aliquid?
+    </div>
+</body>
+</html>
