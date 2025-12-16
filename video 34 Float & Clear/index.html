@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        img{
+            float: left;
+            border: 2px solid blue;
+        }
+        .div:first-child{
+            border: 2px solid black;
+        }
+        img{
+            float: right;
+        }
+        .card:nth-child(2){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://media.istockphoto.com/id/1317323736/photo/a-view-up-into-the-trees-direction-sky.webp?b=1&s=612x612&w=0&k=20&c=8xbZvMyptEaqMW46diKakhVgkPkAzBi5l7J1yveCZFk=" alt="" width="150" class="src">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ipsa dolores eos incidunt fuga iste dignissimos earum, ex excepturi. Itaque officia fugit atque placeat nam!</p>
+        </div>
+        <div class="cards">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo velit alias in reiciendis assumenda quasi, nulla dolore ea soluta eaque eum voluptas, vero totam laborum perferendis, sed voluptates qui eveniet! Molestiae culpa libero eveniet deserunt voluptatem delectus, earum eius dignissimos laudantium et molestias sunt pariatur soluta voluptatibus vel harum reiciendis natus, optio repellendus. Ex nisi perspiciatis, vero cum voluptate sed modi ducimus nesciunt officia quas numquam velit reiciendis ipsa tempore! Sunt non debitis doloremque esse velit illo beatae nihil, molestias rem et ipsam enim placeat fugit accusantium unde tenetur, voluptatem vero architecto neque sapiente at eligendi commodi quos? Laboriosam porro natus quaerat praesentium aperiam earum impedit quo odio voluptatem tempora, numquam maiores fuga expedita facere ipsa iure et odit ipsum dolore! Sequi perspiciatis impedit facere iure cumque? Iusto odio facere iste voluptates et dolor perspiciatis quis, nam est nisi rem, repellendus rerum delectus fugit? Voluptates suscipit blanditiis est ipsam?</p>
+        </div>
+        <div class="cards">Card 3</div>
+    </div>
+    
+</body>
+</html>
